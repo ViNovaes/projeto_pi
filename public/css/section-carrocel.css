@@ -1,0 +1,31 @@
+/*section carrocel*/
+section{
+    display: flex;
+    justify-content: center;
+  }
+  #slider {
+    width: 80%;
+    max-width: 900px;
+    height: 400px;
+    max-height: 300px;
+    position: relative;
+  }
+  /* #sider relacionado a minha imagem */
+  #slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 900ms; /*opacidade da transição de imagem para imagem */
+  }
+  #slider img.selected { 
+    opacity: 1;
+  }
+  #slider h3{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1.9rem;
+  }
+  /*section carrocel*/

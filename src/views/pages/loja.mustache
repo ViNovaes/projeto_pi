@@ -1,0 +1,86 @@
+{{>partials/header}}
+
+<link rel="stylesheet" href="./css/loja.css">
+<link rel="stylesheet" href="./css/cartao.css">
+
+<img src="./images/kkkkkk.png" width="1422px">
+
+<div class="center">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logotipo_sem_ONG- sem fundo.png">
+        </div> 
+        
+        <div class="text">ENCOMENDAR</div>
+            <form action="#">
+                <div class="data">
+                    <label>Nome</label>
+                    <input type="text" maxlength="20" required>
+                </div>
+                <div class="data">
+                    <label>CPF</label>
+                    <input onkeypress="mascara(this, cpf)"  maxlength="14"required>
+                </div>
+
+                <div class="data">
+                    <Label>Email</Label>
+                    <input type="email" maxlength="30" required>
+                </div>
+                <div class="data">
+                    <Label>Telefone</Label>
+                    <input onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____" type="text" maxlength="14" required>
+                </div>
+                <div class="data">
+                    <Label>Endereço</Label>
+                    <input type="text" required>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="label">Forma de Pagamento:</label>
+                        <p class="p">
+                            <input type="radio" id="hide" name="Pagamento" value="hide" checked />
+                            <label for="hide">Crédito</label>
+                            <input type="radio" id="hide" name="Pagamento" value="hide" checked />
+                            <label for="hide">Debito</label>
+                            <input type="radio" id="show" name="Pagamento" value="show" />
+                            <label for="show">PIX</label>                                
+                        </p>     
+                        <div class="containter1">
+                            <form id="checkout">
+                                <div class="checkout-header">
+                                    <h1 class="checkout-title">
+                                    Pagamento com Cartão
+                                    </h1>
+                                </div>
+                                <p>
+                                    <label for="Nome completo"></label>
+                                    <input type="text" class="checkout-input checkout-name" placeholder="Nome" maxlength="25"autofocus required>
+                                    <label for="Mês de Expriração"></label>
+                                    <input type="datetime" class="checkout-input checkout-exp" placeholder="MÊS" maxlength="2"required >
+                                    <label for="Ano de Expiração"></label>
+                                    <input type="datetime" class="checkout-input checkout-exp" placeholder="ANO" maxlength="4" required>
+                                </p>
+                                <p>
+                                    <label for="Número do Cartão"></label>
+                                    <input type="datetime" class="checkout-input checkout-card" placeholder="Número do cartão"  maxlength="19"required >
+                                    <label for="Código de Segurança"></label>
+                                    <input type="datetime" class="checkout-input checkout-cvc" placeholder="CVC" maxlength="3" required>
+                                </p>
+                            </form>
+                            <div class="QR" id="box">
+                                <img src="./images/qrcode_chrome.png" height="200px">
+                            </div>
+                            <p>
+                                <input type="submit" value="Confirmar" class="checkout-btn"/>
+                                <input type="reset" value="Cancelar" class="checkout-btn"/>
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>    
+    </div>
+</div>
+<script src="js/loja.js"></script>
+
+{{>partials/footer}}

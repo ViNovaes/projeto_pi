@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*, *:before, *:after { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.Container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+}
+
+.logo img{
+    width: 400px;
+    padding-left: 5px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+nav ul, nav li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    padding: 10px;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a :hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 5ms;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.container{
+    position: absolute;
+    background: #fff;
+    width: 450px;
+    height: 1070px;
+    padding: 30px;
+    box-shadow: 0px 0px 50px #423f3e9a;
+}
+.container{
+    border-radius: 10px;
+}
+.container .text{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.container form{
+    margin-top: -5px;
+}
+.container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 30px 0;
+}
+form .data label{
+    font-size: 16px;
+}
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border:  1px solid silver;
+}
+form .data input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+}
+form .forgot-pass{
+    margin-top: -8px;
+}
+form .forgot-pass a{
+    color: #3498db;
+    text-decoration: none;
+}
+form .forgot-pass a:hover{
+    text-decoration: underline;
+}
+
+form .btn{
+    margin:  30px 0;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+form .btn .inner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    z-index: -5;
+}
+form .btn:hover .inner{
+    left: 0;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing:  1px;
+    cursor: pointer;
+}
+
+.singup-link{
+    text-align: center;
+}
+.singup-link a{
+    text-decoration: none;
+}
+#acessar a{
+    color: black;
+    text-decoration: none;
+}
+.direitos{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 63vh;
+}
+.direitos p{
+    margin-top: 6vh;
+}
+
+.p{
+    padding-left: 150px;
+}
