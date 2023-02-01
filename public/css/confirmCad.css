@@ -93,8 +93,7 @@ button{
     border-radius: 0.8vh;
     box-shadow: 0.1em 0.1em #000;
     cursor: pointer;
-    margin-top: 10vh;
-    margin-left: 28%;
+    margin-top: 13vh;
     height: 40px;
 }
 button:hover {
@@ -105,9 +104,12 @@ button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em #000;
 }
-#entrar a{
+#enviar a, #cancelar a{
     color: #000;
     text-decoration: none;
+}
+#enviar{
+    margin-left: 15px;
 }
 .container1 p{
     position: relative;

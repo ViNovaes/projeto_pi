@@ -4,13 +4,13 @@ import {sequelize} from '../instances/mysql'
 
 export interface FuncionarioInstance extends Model {
 
-    codFunc: number
-    nome: string
-    cpf: String
-    telefone: number
-    email: string
-    logadouro: string
-    cargo: string
+    codFunc: number,
+    nome: string,
+    cpf: String,
+    telefone: number,
+    email: string,
+    logadouro: string,
+    cargo: string,
     password: string
 }
 

@@ -3,7 +3,6 @@ import { Model,DataTypes } from "sequelize"
 import {sequelize} from '../instances/mysql'
 
 
-
 export interface UsuarioInstance extends Model{
 
 

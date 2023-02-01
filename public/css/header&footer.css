@@ -1,75 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* CSS reset */
 *, *:before, *:after { 
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Poppins', sans-serif;
-}
-*{
   margin: 0;
   padding: 0;
-  outline: none;
-  box-sizing: border-box;
+  transition: all 0.4s;
+  font-family: 'Poppins', sans-serif;
 }
-
 body{
-  background-color: #fffdf7;
+  background-color: #f4f4f9;
 }
-/* CSS reset */
-/*Cabeçalho do Site*/
 header{
-    display: flex;
-    justify-content: center;
-    height: 13vh;
+  display: flex;
+  justify-content: center;
+  height: 13vh;
 }
-
 .Container{
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
 }
 .logo img{
-    width: 360px;
-    padding-left: 70px;
+  width: 360px;
+  padding-left: 70px;
 }
 .menu{
-    display: flex;
-    align-items: center;
-    padding-right: 70px;
-    font-size: 20px;
-    transition: ease .25s;
+  display: flex;
+  align-items: center;
+  padding-right: 70px;
+  font-size: 20px;
 }
 nav ul, nav li{
-    list-style: none;
+  list-style: none;
 }
 nav ul{
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 nav a {
-    color: #000000;
-    text-decoration: none;
-    padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
 }
 nav a :hover{
-    text-shadow: 0px 0px 14px #b9b9b9;
-    text-decoration: underline 2px #2b2d42;
-    transition-duration: 200ms;
-    transition-delay: 10ms;
+  text-shadow: 0px 0px 14px #b9b9b9;
+  text-decoration: underline 2px #2b2d42;
+  transition-duration: 200ms;
+  transition-delay: 10ms;
 }
-/*---------------------------------------*/
-/*footer do codepen*/
+/*Footer*/
 .footer-distributed {
-  margin-top: 750px;
+  position: absolute;
+  top: 215vh;
   background: #1f1f1f; /* fallback for old browsers */
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  padding: 45px 50px;
-}
+  padding: 20px 50px;
+  }
 .footer-distributed .footer-left p {
   color: #8f9296;
   font-size: 10px;
@@ -99,9 +86,6 @@ nav a :hover{
   display: inline-block;
   padding-right: 5px;
 }
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
 .footer-distributed .footer-right {
   float: right;
   margin-top: 6px;
@@ -117,20 +101,23 @@ nav a :hover{
   text-align: center;
   line-height: 35px;
   margin-left: 5px;
-  transition:all .25s;
 }
 .footer-distributed .footer-right a:hover{
-    transform: scale(1.1); 
-    -webkit-transform: scale(1.1);
-    background-color: #707070;
-    box-shadow: 0px 0px 8px -3px #e5e5e588;
-    border-radius: 5px;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 .footer-distributed p.footer-links a:hover{
   text-shadow: 0px 0px 14px #e5e5e5;
   transition-duration: 200ms;
-  transition-delay: 5ms;
   text-decoration: underline;
+}
+.loja{
+  position: fixed;
+  float: right;
+}
+.loja p{
+  display: grid;
+  font-size: 15px;
 }
 /*---------------------------------------*/
 /*scrollbar*/
@@ -142,5 +129,5 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 body::-webkit-scrollbar-track {
-  background: #e9ecef;     
+    background: #e9ecef;     
 }
