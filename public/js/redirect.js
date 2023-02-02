@@ -1,3 +1,3 @@
 setTimeout(function() {
-    window.location.href = "../header footer-Versão Final/PGinicial.html";
+    window.location.href = "../pages/home.mustache";
 }, 5000);

@@ -3,6 +3,7 @@ import { Funcionario } from '../models/Funcionario';
 import { Loja } from '../models/Loja';
 import { Ong } from '../models/Ong';
 import { Usuario } from '../models/Usuario';
+import { Contato } from '../models/Contatos';
 
 import {sequelize } from '../instances/mysql'
 
@@ -17,3 +18,24 @@ export const home = async (req:Request, res:Response) => {
     
     res.render('pages/home')
 }
+
+export const perfil = (red:Request, res:Response) =>{
+    res.render('pages/perfil')
+}
+
+export const sobre = (red:Request, res:Response) =>{
+    res.render('pages/sobre')
+}
+
+export const vagas = (red:Request, res:Response) =>{
+    res.render('pages/vagas')
+}
+
+export const loja = (red:Request, res:Response) =>{
+    res.render('pages/loja')
+}
+
+export const contato = (red:Request, res:Response) =>{
+    res.render('pages/contato')
+}
+

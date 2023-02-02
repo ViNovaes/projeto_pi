@@ -6,6 +6,10 @@ export const login = (req:Request, res:Response) => {
 }
 
 export const contaUsuario = (req:Request, res:Response) =>{
-    res.render('pages/criarContaUsuario')
+    res.render('pages/ContaUsuario')
 }
+
+// export const contaOng = (req:Request, res:Response) => {
+//     res.render('pages/contaOng')
+// }
 
