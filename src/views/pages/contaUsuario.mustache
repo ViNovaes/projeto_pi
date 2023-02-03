@@ -50,26 +50,34 @@
                 </form>
             </div>
             <div class="container2">
-                <form action="#">
+                <form action="../confirmCad">
                     <div class="data">
-                        <input type="text" required placeholder="CPF">
+                        <input id="id_lock" name="id_lock" required placeholder="CPF" class="verifica_numerico" required="" type="text" maxlength="14" onKeyPress="MascaraGenerica(this, 'CPF');">
                     </div>
                     <div class="data">
-                        <input type="text" required placeholder="Telefone">
+                        <input id="id_lock" name="id_lock" required placeholder="Telefone com DDD" class="verifica_numerico" required="" type="text" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE');" >
                     </div>
+                    
                     <div class="data">
                         <input type="text" required placeholder="Rede Social">
                     </div>
                     <div class="data">
                         <input type="text" required placeholder="Experiencia">
                     </div>
-                    <button type="submit" id="entrar"><a href="../confirmCad">Enviar</a></button>
+                    <div class="btn">
+                        <button type="submit" id="entrar">Enviar</button>
+                    </div>
                 </form>
             </div>
+            <script src="../js/pontoparaform.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         </div>
         <!--Conteudo da pagina-->
         <!--footer aqui se prescisar-->
     </div>
+
     <script src="../js/load.js"></script>
+    <script src="../js/cadastro.js"></script>
+
 </body>
 </html>

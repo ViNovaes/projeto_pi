@@ -38,31 +38,46 @@
         <div class="geral">
             <div class="container1">
                 <div class="texto">Cadastar Ong</div>
-                <form action="#">
+                <form action="f1">
                     <div class="data">
-                        <input type="text" required placeholder="Email">
+                        <input type="text" name="email" id="msgemail" onblur="validacaoEmail(f1.email)" required placeholder="Email">
                     </div>
                     <div class="data">
                         <input type="password" required placeholder="Senha">
                     </div>
                     <div class="data">
-                        <input type="tel" required placeholder="Telefone">
+                        <input id="id_lock" name="id_lock" required placeholder="Telefone com DDD" class="verifica_numerico" required="" type="text" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE');">
                     </div>
                     <div class="data">
-                        <input type="text" placeholder="CNPJ">
+                        <input id="id_lock" name="id_lock" placeholder="CNPJ" class="verifica_numerico" type="text" maxlength="18" onKeyPress="MascaraGenerica(this, 'CNPJ');">
                     </div>
                     <div class="data">
-                        <input type="text" placeholder="Classificação">
+                        <input type="text" placeholder="Categoria" required>
                     </div>
                     <div class="data">
-                        <input type="text" required placeholder="Logradouro">
+                        <input id="id_lock" name="cep" placeholder="CEP" class="verifica_numerico" type="text" maxlength="10" onKeyPress="MascaraGenerica(this, 'CEP');">
+                    </div>
+                    <div class="data">
+                        <input type="text" name="rua" required placeholder="rua">
+                    </div>
+                    <div class="data">
+                        <input type="text" name="bairro" required placeholder="bairro">
                     </div>
                 </form>
             </div>
             <div class="container2">
-                <form action="#">
+                <form action="f1">
+                        <div class="data">
+                        <input type="text" name="numero" required placeholder="Numero">
+                    </div>
                     <div class="data">
-                    <input type="text" placeholder="Web Site">
+                        <input type="text" name="cidade" required placeholder="cidade">
+                    </div>
+                    <div class="data">
+                        <input type="text" name="complemento" required placeholder="Complemento">
+                    </div>
+                    <div class="data">
+                        <input type="text" placeholder="Web Site">
                     </div>
                     <div class="data">
                         <input type="text" placeholder="Fecebook">
@@ -76,13 +91,21 @@
                     <div class="data">
                         <textarea name="" id="" cols="10" rows="5" placeholder="Sobre Sua Ong"></textarea>
                     </div>
-                    <button type="submit" id="enviar"><a href="../cadFinalizado">Cadastar</a></button>
+                    <div class="btn">
+                        <button type="submit" id="enviar">Cadastar</button>
+                    </div>
                 </form>
             </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="../js/pontoparaform.js"></script>
+            <script src="../js/cep.js"></script>
+            <script src="validandoemail.js"></script>
         </div>
         <!--Conteudo da pagina-->
         <!--footer aqui se prescisar-->
     </div>
     <script src="../js/load.js"></script>
+    <script src="../js/cadastro.js"></script>
+
 </body>
 </html>

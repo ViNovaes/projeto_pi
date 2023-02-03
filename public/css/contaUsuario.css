@@ -114,3 +114,15 @@ button:active {
     bottom: 70px;
     text-align: center;
 }
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none; 
+    -webkit-appearance: none;
+    margin: 0; 
+    maxlength: 11;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+} */
