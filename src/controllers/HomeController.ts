@@ -19,23 +19,23 @@ export const home = async (req:Request, res:Response) => {
     res.render('pages/home')
 }
 
-export const perfil = (red:Request, res:Response) =>{
+export const perfil = (req:Request, res:Response) =>{
     res.render('pages/perfil')
 }
 
-export const sobre = (red:Request, res:Response) =>{
+export const sobre = (req:Request, res:Response) =>{
     res.render('pages/sobre')
 }
 
-export const vagas = (red:Request, res:Response) =>{
+export const vagas = (req:Request, res:Response) =>{
     res.render('pages/vagas')
 }
 
-export const loja = (red:Request, res:Response) =>{
+export const loja = (req:Request, res:Response) =>{
     res.render('pages/loja')
 }
 
-export const contato = (red:Request, res:Response) =>{
+export const contato = (req:Request, res:Response) =>{
     res.render('pages/contato')
 }
 

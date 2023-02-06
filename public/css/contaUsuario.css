@@ -1,20 +1,61 @@
 /*conteudo de login box-01, box-02 e container(1 e 2)*/
 .geral{
     display: flex;
-    justify-content: center;
-    margin-top: 10%;
+    justify-content: left;
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 50%;
 }
 .container1{
-    background-color: #7ea3f1a8;
-    width: 400px;
-    height: 390px;
-    border-radius: 10px 0 0 10px;
+    width: 800px;
+    height: 590px;
+    border-radius: 2vh;
     color: #fffdf7;
     display: grid;
+    margin-bottom: 5vh;
     justify-content: center;
     border-top: #2b2d42 solid 0.40vh;
     border-left:#2b2d42 solid 0.40vh;
+    border-right:#2b2d42 solid 0.40vh;
     border-bottom: #2b2d42 solid 0.70vh;
+}
+.container1 .texto1{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    margin-top: 60px;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.container1 .data{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.container1 .data input{
+    margin-top: 5px;
+    border-radius: 1vh;
+    font-size: 18px;
+    padding-left: 5px;
+    width: 90%;
+    height: 30px;
+    border: #cdd6dd solid 0.50vh;
+    border-bottom: #fbc55f solid 0.50vh;
+    border-right: #fbc55f solid 0.50vh;
+}
+.container1 .btn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 1vh;
+}
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 600px;
+    position: relative;
+    bottom: 10vh;
 }
 input:focus{
     outline: 0;
@@ -25,59 +66,6 @@ input::placeholder{
     font-size: 15px;
     color: #6c757d6b;
     font-weight: 700;
-}
-.container1 .texto1{
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1.9rem;
-    font-weight: 800;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.33);
-}
-.container1 .data{
-    position: relative;
-    bottom: 60px;
-    display: grid;
-    margin-top: 10px;
-}
-.container1 .data input{
-    margin-top: 10px;
-    border-radius: 1vh;
-    font-size: 18px;
-    padding-left: 5px;
-    width: 90%;
-    height: 30px;
-    border: #cdd6dd solid 0.50vh;
-    border-bottom: #fbc55f solid 0.50vh;
-    border-right: #fbc55f solid 0.50vh;
-}
-.container2{
-    background-color: #fffdf7;
-    border-radius: 0px 10px 10px 0px;
-    width: 360px;
-    display: grid;
-    justify-content: center;
-    border-top: #2b2d42 solid 0.40vh;
-    border-right:#2b2d42 solid 0.70vh;
-    border-bottom: #2b2d42 solid 0.70vh;
-}
-.container2 .data{
-    position: relative;
-    top: 50px;
-    display: grid;
-    margin-top: 10px;
-}
-.container2 .data input{
-    margin-top: 10px;
-    border-radius: 1vh;
-    font-size: 18px;
-    padding-left: 5px;
-    width: 90%;
-    height: 30px;
-    border: #cdd6dd solid 0.50vh;
-    border-bottom: #fbc55f solid 0.50vh;
-    border-right: #fbc55f solid 0.50vh;
 }
 button{
     display: flex;
@@ -93,9 +81,11 @@ button{
     border-radius: 0.8vh;
     box-shadow: 0.1em 0.1em #000;
     cursor: pointer;
-    margin-top: 10vh;
-    margin-left: 28%;
+    margin-top: 2vh;
     height: 40px;
+}
+.btn a{
+    text-decoration: none;
 }
 button:hover {
     transform: translate(-0.05em, -0.05em);
@@ -109,20 +99,26 @@ button:active {
     color: #000;
     text-decoration: none;
 }
-.container1 p{
+.entrarContato{
+    display: grid;
+    justify-content: right;
+    align-items: center;
     position: relative;
-    bottom: 70px;
-    text-align: center;
+    bottom: 25pc;
+    left: 60pc;
+    margin-right: 10vh;
+    width: 30%;
 }
-
-/* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    display: none; 
-    -webkit-appearance: none;
-    margin: 0; 
-    maxlength: 11;
+.entrarContato a{
+    text-decoration: none;
 }
-
-input[type=number] {
-    -moz-appearance:textfield;
-} */
+.entrarContato .title2{
+    width: 400px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+}
+.entrarContato .btn2{
+    display: flex;
+    justify-content: center;
+}

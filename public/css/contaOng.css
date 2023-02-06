@@ -1,34 +1,36 @@
 .geral{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-left: 10%;
+    width: 50%;
 }
 .container1{
-    background-color: #7ea3f1a8;
-    width: 400px;
-    height: 650px;
-    border-radius: 10px 0 0 10px;
-    color: #fffdf7;
+    width: 900px;
+    height: 700px;
+    border-radius: 2vh;
     display: grid;
     justify-content: center;
+    margin-bottom: 10vh;
     border-top: #2b2d42 solid 0.40vh;
     border-left:#2b2d42 solid 0.40vh;
+    border-right:#2b2d42 solid 0.40vh;
     border-bottom: #2b2d42 solid 0.70vh;
 }
 .container1 .texto{
-    display: flex;
+    display: grid;
     justify-content: center;
-    margin-top: 40px;
-    font-size: 1.9rem;
+    text-align: center;
+    color: #333;
+    margin-top: 60px;
+    font-size: 2.5rem;
     font-weight: 800;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.33);
 }
 .container1 .data{
     position: relative;
-    bottom: 20px;
+    top: 2vh;
     display: grid;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .container1 .data input{
     margin-top: 10px;
@@ -41,6 +43,13 @@
     border-bottom: #fbc55f solid 0.50vh;
     border-right: #fbc55f solid 0.50vh;
 }
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 600px;
+    position: relative;
+    bottom: 10vh;
+}
 input:focus{
     outline: 0;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
@@ -51,38 +60,6 @@ input::placeholder{
     color: #6c757d6b;
     font-weight: 700;
 }
-.container2{
-    background-color: #fffdf7;
-    border-radius: 0px 10px 10px 0px;
-    width: 360px;
-    display: grid;
-    justify-content: center;
-    border-top: #2b2d42 solid 0.40vh;
-    border-right:#2b2d42 solid 0.70vh;
-    border-bottom: #2b2d42 solid 0.70vh;
-}
-.container2 .data{
-    position: relative;
-    top: 50px;
-    display: grid;
-    margin-top: 10px;
-}
-.container2 .data input{
-    margin-top: 10px;
-    border-radius: 1vh;
-    font-size: 18px;
-    padding-left: 5px;
-    width: 90%;
-    height: 30px;
-    border: #cdd6dd solid 0.50vh;
-    border-bottom: #fbc55f solid 0.50vh;
-    border-right: #fbc55f solid 0.50vh;
-}
-.container2 input:focus{
-    outline: 0;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
-    transform: scale(1.02);
-}
 textarea{
     outline: 0;
     width: 92%;
@@ -92,10 +69,23 @@ textarea{
     border-right: #fbc55f solid 0.50vh;
     resize: none;
 }
-.container2 textarea:focus{
+.container1 textarea:focus{
     outline: 0;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
     transform: scale(1.02);
+}
+.container1 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 0px;
+    position: relative;
+    bottom: 2vh;
+    background-color: aquamarine;
+}
+.btn a{
+    text-decoration: none;
 }
 button{
     display: flex;
@@ -112,7 +102,6 @@ button{
     box-shadow: 0.1em 0.1em #000;
     cursor: pointer;
     margin-top: 10vh;
-    margin-left: 20%;
     height: 40px;
 }
 button:hover {
@@ -126,4 +115,29 @@ button:active {
 #enviar a{
     color: #000;
     text-decoration: none;
+}
+.entrarContato{
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    bottom: 30pc;
+    left: 60pc;
+    margin-right: 10vh;
+    width: 30%;
+}
+.entrarContato a{
+    text-decoration: none;
+}
+.entrarContato .title2{
+    width: 400px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+}
+.entrarContato .btn2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 7vh;
 }

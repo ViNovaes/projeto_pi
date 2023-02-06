@@ -23,7 +23,7 @@
                     <nav>
                         <ul>
                             <a href="../"><li>Home</li></a>
-                            <a href="../login"><li>Entrar</li></a>
+                            <a href="../login"><li>Voltar</li></a>
                             <a href="../vagas"><li>Vagas</li></a>
                             <a href="../loja"><li>Loja</li></a>
                             <a href="../sobre"><li>Sobre</li></a>
@@ -38,12 +38,12 @@
         <div class="geral">
             <div class="container1">
                 <div class="texto">Cadastar Ong</div>
-                <form action="f1">
+                <form action="#">
                     <div class="data">
                         <input type="text" name="email" id="msgemail" onblur="validacaoEmail(f1.email)" required placeholder="Email">
                     </div>
                     <div class="data">
-                        <input type="password" required placeholder="Senha">
+                        <input type="password" placeholder="Senha" required>
                     </div>
                     <div class="data">
                         <input id="id_lock" name="id_lock" required placeholder="Telefone com DDD" class="verifica_numerico" required="" type="text" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE');">
@@ -58,23 +58,13 @@
                         <input id="id_lock" name="cep" placeholder="CEP" class="verifica_numerico" type="text" maxlength="10" onKeyPress="MascaraGenerica(this, 'CEP');">
                     </div>
                     <div class="data">
-                        <input type="text" name="rua" required placeholder="rua">
+                        <input type="text" placeholder="Rua" name="rua" required>
                     </div>
                     <div class="data">
-                        <input type="text" name="bairro" required placeholder="bairro">
-                    </div>
-                </form>
-            </div>
-            <div class="container2">
-                <form action="f1">
-                        <div class="data">
-                        <input type="text" name="numero" required placeholder="Numero">
+                        <input type="text" placeholder="Numero" required>
                     </div>
                     <div class="data">
-                        <input type="text" name="cidade" required placeholder="cidade">
-                    </div>
-                    <div class="data">
-                        <input type="text" name="complemento" required placeholder="Complemento">
+                        <input type="text" placeholder="Complemento" required>
                     </div>
                     <div class="data">
                         <input type="text" placeholder="Web Site">
@@ -89,10 +79,10 @@
                         <input type="text" placeholder="Instagram">
                     </div>
                     <div class="data">
-                        <textarea name="" id="" cols="10" rows="5" placeholder="Sobre Sua Ong"></textarea>
+                        <textarea name="" id="" cols="10" rows="5" placeholder="Sobre Sua Ong" required></textarea>
                     </div>
                     <div class="btn">
-                        <button type="submit" id="enviar">Cadastar</button>
+                        <a href="../"><button type="submit" id="enviar">Enviar</button></a>
                     </div>
                 </form>
             </div>
@@ -100,6 +90,12 @@
             <script src="../js/pontoparaform.js"></script>
             <script src="../js/cep.js"></script>
             <script src="validandoemail.js"></script>
+        </div>
+        <div class="entrarContato">
+            <div class="title2">Não é ONG? Crie como Usuario:</div>
+            <div class="btn2">
+                <a href="../contato"><button type="submit" id="contato">Sou Usuario</button></a>
+            </div>
         </div>
         <!--Conteudo da pagina-->
         <!--footer aqui se prescisar-->
